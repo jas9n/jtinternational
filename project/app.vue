@@ -3,7 +3,6 @@
 const nuxtApp = useNuxtApp()
 
 nuxtApp.hook("page:finish", () => {
-  console.log('finish')
   window.scrollTo(0, 0)
 })
 

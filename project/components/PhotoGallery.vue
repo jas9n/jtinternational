@@ -1,5 +1,5 @@
 <template>
-    <div id="gallery" class="flex justify-center items-center w-full h-[40vh] md:h-screen">
+    <div class="flex justify-center items-center w-full md:h-screen h-[50vh]">
         <div class="group flex justify-center items-center relative w-[90vw] lg:w-[80vw]">
             <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="item absolute transition duration-250"/>
             <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="item absolute transition duration-250"/>
