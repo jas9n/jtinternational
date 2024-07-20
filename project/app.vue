@@ -1,3 +1,14 @@
+<script setup>
+
+const nuxtApp = useNuxtApp()
+
+nuxtApp.hook("page:finish", () => {
+  console.log('finish')
+  window.scrollTo(0, 0)
+})
+
+</script>
+
 <template>
   <div>
     <global-nav/>

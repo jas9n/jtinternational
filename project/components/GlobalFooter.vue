@@ -1,20 +1,41 @@
 <template>
-    <div id="footer">
-        <div class="w-full h-[50vh] flex flex-col justify-center items-center z-10 bg-white">
-            <img src="/images/logos/logo.svg" alt="JagTrim International" class="h-16 mb-8">
-            <ul class="flex justify-center items-center space-x-16 font-medium mb-8 text-zinc-500">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Collection</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            <div class="flex flex-col justify-center items-center">
-                <h3 class="font-semibold mb-2">Stay in touch</h3>
-                <div class="flex justify-center items-center space-x-8">
-                    <p>(917) 207-7549</p>
-                    <p>amanda@jagtrim.com</p>
+    <footer>
+        <div class="w-full h-[65vh] lg:h-[55vh] flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start pt-6 px-12 z-10 bg-white relative">
+            <div class="flex flex-col justify-center items-center lg:items-start">
+                <img src="/images/logos/logo.svg" alt="JagTrim International" class="h-16 mb-4">
+                <div class="flex flex-col justify-center items-start mb-4">
+                    <p class="space-x-4">
+                        <span class="font-semibold">Phone</span>
+                        <span class="text-zinc-500">(917) 207-7549</span>
+                    </p>
+                    <p class="space-x-5">
+                        <span class="font-semibold">Email</span>
+                        <span class="text-zinc-500">amanda@jagtrim.com</span>
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center lg:items-start mb-8">
+                    <p class="flex flex-col items-center lg:items-start mb-4">
+                        <span class="font-semibold">Head Office</span>
+                        <span class="text-zinc-500">315 W 39th St Studio 905</span>
+                        <span class="text-zinc-500">New York, NY 10018</span>
+                    </p>
+                    <p class="flex flex-col items-center lg:items-start">
+                        <span class="font-semibold">Branch Office</span>
+                        <span class="text-zinc-500">Flat B, 14F Kwai Shing Industrial Building</span>
+                        <span class="text-zinc-500"> Phase 1, 36-40 Tai Lin Pai Rd,</span>
+                        <span class="text-zinc-500"> Kwai Chung, Hong Kong</span>
+                    </p>
                 </div>
             </div>
+            <ul class="flex justify-center items-center space-x-16 xl:space-x-24 font-semibold lg:pt-20">
+                <li><nuxt-link :to="{ name: 'index', hash: '#about' }" class="" >About Us</nuxt-link></li>
+                <li><nuxt-link :to="{ name: 'collection' }" class="" >Our Collection</nuxt-link></li>
+                <li><nuxt-link :to="{ name: 'sustainability' }" class="" >Sustainability</nuxt-link></li>
+                <li><nuxt-link :to="{ name: 'contact' }" class="">Contact Us</nuxt-link></li>
+            </ul>
+            <a href="https://github.com/jas9n/" target="_blank" class="absolute bottom-6 right-6">
+                <img src="/images/logos/git.svg" class="h-6" alt="Github">
+            </a>
         </div>
-    </div>
+    </footer>
 </template>

@@ -1,10 +1,10 @@
 <template>
-  <div class="group flex w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96 p-8 rounded bg-white">
+  <div class="group flex w-96 h-96 md:w-72 md:h-72 xl:w-96 xl:h-96 p-8 rounded bg-white">
     <nuxt-link :to="{ name: 'collection-product', params: {product: id }}" class="flex justify-center items-center">
-      <div class="bg-black hidden md:flex md:w-72 md:h-72 lg:w-96 lg:h-96 absolute left-0 opacity-0 group-hover:opacity-10 transition duration-200 ease-out rounded justify-center items-center">
+      <div class="bg-black w-96 h-96 flex md:w-72 md:h-72 xl:w-96 xl:h-96 absolute left-0 opacity-0 group-hover:opacity-10 transition duration-200 ease-out rounded justify-center items-center">
         <!-- <h3>{{ item }}</h3> -->
       </div>
-      <img :src="`/images/collection/${photo}.svg`" alt="" class="h-64">
+      <img :src="`/images/collection/${photo}.svg`" alt="" class="h-full">
     </nuxt-link>
   </div>
 </template>
