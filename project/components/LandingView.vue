@@ -20,7 +20,7 @@ import gsap from 'gsap'
 export default {
     name: 'LandingView',
     mounted() {
-        gsap.from('#landing-img', {opacity: 0, duration: 2}, 0.3)
+        // gsap.from('#landing-img', {opacity: 0, duration: 2}, 0.3)
         gsap.to('#monogram1', {x: '-100%',  opacity: 0.1, duration: 2}, 0.3)
         gsap.to('#monogram2', {x: '100%', opacity: 0.1, duration: 2}, 0.3)
         gsap.from('#title', {y: -40, opacity: 0, duration: 1, stagger: 0.4}, 1.5)
