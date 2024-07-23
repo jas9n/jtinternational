@@ -1,6 +1,7 @@
 <template>
     <nav id="nav">
-        <div :class="{ nav: fixed }" class="fixed top-0 flex w-full px-8 py-4 z-50 bg-transparent md:px-12 lg:px-16 xl:px-20 hover:bg-white transition-colors duration-500">
+        <!-- :class="{ nav: fixed }" -->
+        <div class="fixed top-0 flex w-full px-8 py-4 z-50 bg-transparent md:px-12 lg:px-16 xl:px-20 hover:bg-white transition-colors duration-500">
             <div class="w-full h-full flex justify-between items-center">
                 <nuxt-link :to="{ name: 'index' }">
                     <img src="/images/logos/logo.svg" alt="JagTrim International" class="h-12">

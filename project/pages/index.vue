@@ -11,9 +11,17 @@
                 </p>
             </div>
         </div>
-        <div id="sketch" class="w-full h-[60vh] md:h-screen flex justify-center items-center">
-            <img id="img1" src="/images/photos/sketch1.jpg" alt="" class="w-full h-full object-cover">
-            <img id="img2" src="/images/photos/sketch2.png" alt="" class="w-full h-full object-cover opacity-100 absolute left-0 top-0 z-10 ">
+        <div id="sketch" class="w-full h-[60vh] md:h-screen flex justify-center items-center relative" >
+            <img id="img1" src="/images/photos/sketch2.jpg" alt="" class=" h-full absolute">
+
+            <svg class="w-full h-full object-cover" preserve-aspect-ratio="xMidYMid slice">
+                <defs>
+                    <mask id="mask" x="0" y="0" width="100%" height="100%">
+                        <rect id="img2" x="0" y="0" width="100%" height="100%"/>
+                    </mask>
+                </defs>
+                <image href="/images/photos/sketch1.jpg"  x="0" y="0" width="100%" height="100%"/>
+            </svg>
     
         </div>
         <div id="collection" class="h-screen flex justify-center items-center">
@@ -56,15 +64,43 @@ export default {
         scrollTrigger: {
           trigger: '#sketch',
           start: 'top top',
-          end: 'bottom 250vh',
+          end: 'bottom 240vh',
           pin: '#sketch',
           scrub: 0.2,
         }
       })
       sketch.fromTo('#img1', {x:0}, {x:0}, 0)
-      sketch.fromTo('#img2', {x: '-100%'}, {x: '0%'}, 0)
+    //   sketch.fromTo('#img2', {width: '0%'}, {x: '100%'}, 0)
+      sketch.fromTo('#img2', {x: '0%'}, {x: '490%'}, 0)
 
       
     },
 }
 </script>
+
+<style scoped>
+mask {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 10;
+}
+
+svg rect {
+    fill: white;
+}
+
+svg > image {
+    -webkit-mask: url(#mask);
+    mask: url(#mask);
+    /* fill: white; */
+}
+
+</style>
