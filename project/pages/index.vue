@@ -25,7 +25,7 @@
             </svg>
     
         </div>
-        <div id="spacer" class="h-[50vh]"></div>
+        <div id="spacer" class="hidden h-[50vh] lg:block"></div>
         <div id="collection" class="h-screen flex justify-center items-center">
             <p>This is the collection section</p>
         </div>
