@@ -1,7 +1,12 @@
 <template>
-    <div class="h-screen w-full flex justify-center items-center">
-        <div >
-            <img :src="`/images/collection/${itemStore.items[$route.params.product - 1].photo[0]}.svg`" alt="">
+    <div class="h-screen w-full flex flex-col lg:flex-row justify-center items-center">
+        <div class="flex flex-col justify-center items-center">
+            <img :src="`/images/collection/${itemStore.items[$route.params.product - 1].photo[index]}.jpg`" :alt="itemStore.items[$route.params.product - 1].photo[0]" class="w-[80vw] lg:w-[40vw]">
+            <div id="gallery" class="flex w-full space-x-6">
+                <div v-for="(photo, index) in itemStore.items[$route.params.product - 1].photo" :key="index" @click="display()" class="item">
+                    <img :src="`/images/collection/${photo}.jpg`" :alt="photo" class="w-20 h-20">
+                </div>
+            </div>
         </div>
         <div class="h-[40vh] w-[40vw] space-y-6">
             <h1 class="font-serif font-medium text-4xl">{{ itemStore.items[$route.params.product - 1].name }}</h1>
@@ -14,6 +19,11 @@
 import { useItemStore } from '@/store/index';
  
 export default {
+    data() {
+        return {
+            index: 0,
+        }
+    },
     props: {
         product: String,
     },
@@ -21,6 +31,12 @@ export default {
         const itemStore = useItemStore()
 
         return { itemStore }
-    }
+    },
+    methods: {
+        display() {
+            // console.log(this.itemStore.items[this.$route.params.product - 1].photo)
+            
+        }
+    },
 }
 </script>

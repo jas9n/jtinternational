@@ -12,7 +12,7 @@
 
               <textarea v-model="emailData.message"  class="block h-48 sm:h-60 py-2.5 px-3 mt-2.5 w-full text-sm text-zinc-900 bg-transparent rounded border border-solid border-zinc-200 appearance-none focus:outline-none focus:ring-0 focus:border-orange-400" name="message" type="text" placeholder="Message" required/>
           
-              <button type="submit" class=" bg-orange-400 mt-2.5 px-8 py-3 rounded hover:bg-orange-500 transition-colors duration-300">Contact Us</button>
+              <button @click="redirect()" type="submit" class=" bg-orange-400 mt-2.5 px-8 py-3 rounded hover:bg-orange-500 transition-colors duration-300">Contact Us</button>
             </form>
           </div>
       </div>
@@ -35,11 +35,11 @@ export default {
       try {
         await $fetch("https://5equ0zbhib.execute-api.us-east-2.amazonaws.com/production/sendemail", {
           method: "POST",
-          headers: {
-            "Access-Control-Allow-Headers": "Content-Type",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
-          },
+          // headers: {
+          //   "Access-Control-Allow-Headers": "Content-Type",
+          //   "Access-Control-Allow-Origin": "*",
+          //   "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
+          // },
           body: {
             "name": this.emailData.name,
             "email": this.emailData.email,
@@ -51,13 +51,13 @@ export default {
       }
     },
 
-    // async redirect() {
-    //   try {
-    //       await navigateTo('/success')
-    //     } catch(err) {
-    //       console.log(err)
-    //     }
-    // }
+    async redirect() {
+      try {
+          await navigateTo('/success')
+        } catch(err) {
+          console.log(err)
+        }
+    }
   }
 }
 </script>
