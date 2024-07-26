@@ -1,9 +1,9 @@
 <template>
-    <div class="h-screen w-full flex flex-col lg:flex-row justify-center items-center">
+    <div class="min-h-screen w-full flex flex-col lg:flex-row justify-center items-center">
         <div class="flex flex-col justify-center items-center">
             <img :src="`/images/collection/${itemStore.items[$route.params.product - 1].photo[index]}.jpg`" :alt="itemStore.items[$route.params.product - 1].photo[0]" class="w-[80vw] lg:w-[40vw]">
-            <div id="gallery" class="flex w-full space-x-6">
-                <div v-for="(photo, index) in itemStore.items[$route.params.product - 1].photo" :key="index" @click="display()" class="item">
+            <div id="gallery" class="flex items-center justify-center lg:justify-start w-full space-x-2">
+                <div v-for="(photo, index) in itemStore.items[$route.params.product - 1].photo" :key="index" @click="display(index)" class="item cursor-pointer">
                     <img :src="`/images/collection/${photo}.jpg`" :alt="photo" class="w-20 h-20">
                 </div>
             </div>
@@ -33,9 +33,8 @@ export default {
         return { itemStore }
     },
     methods: {
-        display() {
-            // console.log(this.itemStore.items[this.$route.params.product - 1].photo)
-            
+        display(n) {
+            this.index = n
         }
     },
 }

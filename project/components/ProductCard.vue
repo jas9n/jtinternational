@@ -1,7 +1,7 @@
 <template>
   <div class="group flex w-96 h-96 md:w-72 md:h-72 xl:w-96 xl:h-96 p-8 rounded bg-white">
     <nuxt-link :to="{ name: 'collection-product', params: {product: id }}" class="flex justify-center items-center">
-      <div class="bg-black w-96 h-96 md:w-72 md:h-72 xl:w-96 xl:h-96 absolute left-0 opacity-0 group-hover:opacity-40 transition duration-200 ease-out rounded-lg ">
+      <div class="bg-black w-96 h-96 md:w-72 md:h-72 xl:w-96 xl:h-96 absolute left-0 opacity-0 group-hover:opacity-30 transition duration-200 ease-out rounded-lg ">
       </div>
       <div class="group-hover:opacity-100 opacity-0 transition duration-200 ease-out absolute ">
         <h3 class="font-medium text-white">{{ item }}</h3>
