@@ -87,7 +87,7 @@ export default {
   bottom: 0;
   content: '';
   display: block;
-  height: 1.5px;
+  height: 1.6px;
   border-radius: 0.6px;
   left: 50%;
   position: absolute;

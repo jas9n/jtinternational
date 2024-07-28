@@ -27,13 +27,13 @@
                     </p>
                 </div>
             </div>
-            <ul class="flex justify-center items-center space-x-16 xl:space-x-24 font-semibold lg:pt-20">
+            <ul class="flex justify-center items-center space-x-8 md:space-x-16 xl:space-x-24 font-semibold lg:pt-20 text-center">
                 <li><nuxt-link :to="{ name: 'index', hash: '#about' }" class="" >About Us</nuxt-link></li>
                 <li><nuxt-link :to="{ name: 'collection' }" class="" >Our Collection</nuxt-link></li>
                 <li><nuxt-link :to="{ name: 'sustainability' }" class="" >Sustainability</nuxt-link></li>
                 <li><nuxt-link :to="{ name: 'contact' }" class="">Contact Us</nuxt-link></li>
             </ul>
-            <a href="https://github.com/jas9n/" target="_blank" class="absolute bottom-6 right-6">
+            <a href="https://github.com/jas9n/" target="_blank" class="absolute bottom-2 right-2 md:bottom-6 md:right-6">
                 <img src="/images/logos/git.svg" class="h-6" alt="Github">
             </a>
         </div>

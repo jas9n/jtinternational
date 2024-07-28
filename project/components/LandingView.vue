@@ -21,7 +21,7 @@ import gsap from 'gsap'
 export default {
     data() {
         return {
-            photos: ['office', 'main', 'ceo', 'shelf1', 'materials'],
+            photos: ['office', 'main', 'ceo', 'shelf2', 'materials'],
             timer: null,
             index: 0,
             count: 5,
