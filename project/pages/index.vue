@@ -3,7 +3,7 @@
         <div id="landing">
             <LandingView />
         </div>
-        <div id="about" class="w-full h-[70vh] flex justify-center items-center z-20 bg-white">
+        <div id="about" class="w-full h-auto py-20 flex justify-center items-center z-20 bg-white">
             <div class="flex flex-col items-center justify-center w-2/3 space-y-4">
                 <h2 class="font-serif font-medium text-3xl md:text-4xl lg:text-5xl pb-4 text-center">Design with passion. Craft with precision.</h2>
                 <p class="text-md md:text-lg lg:text-xl text-center">
