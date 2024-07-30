@@ -5,7 +5,7 @@ export const useItemStore = defineStore('itemStore', {
         items: [
             {
                 id: 1, 
-                name: 'Metals', 
+                name: 'Metal', 
                 photo: [
                     'metal1', 
                     'metal2', 
@@ -30,7 +30,29 @@ export const useItemStore = defineStore('itemStore', {
             },
             {
                 id: 3, 
-                name: 'Polyester', 
+                name: 'Embellishments', 
+                photo: [
+                    'crys1', 
+                    'crys2', 
+                    'crys3', 
+                    'crys4', 
+                    'crys5' 
+                ]
+            },
+            {
+                id: 4, 
+                name: 'Sustainable', 
+                photo: [
+                    'sust1', 
+                    'sust2', 
+                    'sust3', 
+                    'sust4', 
+                    'sust5'
+                ]
+            },
+            {
+                id: 5, 
+                name: 'Polyester Resin', 
                 photo: [
                     'poly1', 
                     'poly2', 
@@ -40,17 +62,7 @@ export const useItemStore = defineStore('itemStore', {
                 ]
             },
             {
-                id: 4, 
-                name: 'Crystals & Pearls', 
-                photo: [
-                    'crys1', 
-                    'crys2', 
-                    'crys3', 
-                    'crys4', 
-                    'crys5' 
-                ]},
-            {
-                id: 5, 
+                id: 6, 
                 name: 'Handmade', 
                 photo: [
                     'handmade1', 
@@ -58,17 +70,6 @@ export const useItemStore = defineStore('itemStore', {
                     'handmade3', 
                     'handmade4', 
                     'handmade5'
-                ]
-            },
-            {
-                id: 6, 
-                name: 'Sustainable', 
-                photo: [
-                    'sust1', 
-                    'sust2', 
-                    'sust3', 
-                    'sust4', 
-                    'sust5'
                 ]
             },
         ]
