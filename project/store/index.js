@@ -12,7 +12,10 @@ export const useItemStore = defineStore('itemStore', {
                     'metal3', 
                     'metal4', 
                     'metal5' 
-                ]
+                ],
+                desc: [
+                    
+                ],
             },
             {
                 id: 2, 
