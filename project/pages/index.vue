@@ -28,15 +28,11 @@
         <div id="spacer" class="hidden h-[20vh] sm:block sm:h-[40vh] md:h-[70vh]"></div>
         <div id="collection" class="h-screen flex justify-center items-center">
             <img src="/images/photos/collection.jpg" alt="" class="absolute w-full h-full max-h-[60vh] md:max-h-none object-cover"> 
-            <p class="">hello guys</p>
+            
             <nuxt-link :to="{ path: 'collection'}">
                 <button class=" bg-orange-400 mt-2.5 px-8 py-3 opacity-90 rounded hover:bg-orange-500 transition-colors duration-300 z-10 absolute ml-20">View Collection</button>
             </nuxt-link>
         </div>
-        <!-- <div id="gallery">
-            <PhotoGallery />
-        </div> -->
-
     </div>
 </template>
 
