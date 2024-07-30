@@ -9,8 +9,9 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'JagTrim International'
-    }
+      title: 'JagTrim International',
+      link: [{ rel: 'icon', type: 'image/jpg', href: '' }]
+    },
   },
   modules: ['@pinia/nuxt'],
   alias: {

@@ -25,9 +25,13 @@
             </svg>
     
         </div>
-        <div id="spacer" class="hidden h-[50vh] lg:block"></div>
+        <div id="spacer" class="hidden h-[20vh] sm:block sm:h-[40vh] md:h-[70vh]"></div>
         <div id="collection" class="h-screen flex justify-center items-center">
-            <p>This is the collection section</p>
+            <img src="/images/photos/collection.jpg" alt="" class="absolute w-full h-full max-h-[60vh] md:max-h-none object-cover"> 
+            <p class="">hello guys</p>
+            <nuxt-link :to="{ path: 'collection'}">
+                <button class=" bg-orange-400 mt-2.5 px-8 py-3 opacity-90 rounded hover:bg-orange-500 transition-colors duration-300 z-10 absolute ml-20">View Collection</button>
+            </nuxt-link>
         </div>
         <!-- <div id="gallery">
             <PhotoGallery />
@@ -66,12 +70,12 @@ export default {
         scrollTrigger: {
           trigger: '#sketch',
           start: 'top top',
-          end: 'bottom 240vh',
+          end: 'bottom 250vh',
           pin: '#sketch',
-          scrub: 0.2,
+          scrub: 0.3,
         }
       })
-      sketch.fromTo('#img1', {x:0}, {x:0}, 0)
+    //   sketch.fromTo('#img1', {x:0}, {x:0}, 0)
     //   sketch.fromTo('#img2', {width: '0%'}, {x: '100%'}, 0)
       sketch.fromTo('#img2', {x: '0%'}, {x: '490%', ease:'power3.out'}, 0)
 
