@@ -25,7 +25,7 @@
             </svg>
     
         </div>
-        <div id="spacer" class="hidden h-[20vh] sm:block sm:h-[30vh] md:h-[60vh]"></div>
+        <div id="spacer" class=" h-[20vh] sm:h-[30vh] md:h-[60vh]"></div>
         <div class="w-full h-auto py-20 flex justify-center items-center z-20 bg-white">
             <div class="flex flex-col items-center justify-center w-2/3 space-y-4">
             <h2 class="font-serif font-medium text-2xl md:text-3xl lg:text-4xl pb-4 text-center">
