@@ -25,12 +25,25 @@
             </svg>
     
         </div>
-        <div id="spacer" class="hidden h-[20vh] sm:block sm:h-[40vh] md:h-[70vh]"></div>
+        <div id="spacer" class="hidden h-[20vh] sm:block sm:h-[30vh] md:h-[60vh]"></div>
+        <div class="w-full h-auto py-20 flex justify-center items-center z-20 bg-white">
+            <div class="flex flex-col items-center justify-center w-2/3 space-y-4">
+            <h2 class="font-serif font-medium text-2xl md:text-3xl lg:text-4xl pb-4 text-center">
+                From your vision to reality
+
+            </h2>
+                <p class="text-md md:text-lg lg:text-xl text-center">
+                    Our team enjoys the brainstorming processes of product development. Share your vision with us or drop your design dilemmas on us, we’ll come up with options and solutions. From sketches to CAD, from 3D prints to copper models, we handle all the meticulous details so you can sit back and enjoy the fruition of the final product.
+
+ 
+                </p>
+            </div>
+        </div>
         <div id="collection" class="h-screen flex justify-center items-center">
             <img src="/images/photos/collection.jpg" alt="" class="absolute w-full h-full max-h-[60vh] md:max-h-none object-cover"> 
             
-            <nuxt-link :to="{ path: 'collection'}">
-                <button class=" bg-white text-lg mt-2.5 px-12 py-4 opacity-90 rounded hover:bg-zinc-100 transition-colors duration-300 z-10 absolute ml-20">View Products</button>
+            <nuxt-link :to="{ path: 'collection'}" class="flex justify-center items-center">
+                <button class=" bg-white text-lg px-8 py-3 lg:px-12 lg:py-4 opacity-90 rounded hover:bg-zinc-100 transition-colors duration-300 z-10 absolute">View Products</button>
             </nuxt-link>
         </div>
     </div>
