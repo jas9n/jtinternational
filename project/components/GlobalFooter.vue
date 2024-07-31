@@ -1,9 +1,17 @@
 <template>
     <footer>
-        <div class="w-full h-[65vh] lg:h-[55vh] flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start pt-6 px-12 z-10 bg-white relative">
+        <div class="w-full h-[70vh] lg:h-[60vh] flex flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start pt-6 px-12 z-10 bg-white relative">
             <div class="flex flex-col justify-center items-center lg:items-start">
                 <img src="/images/logos/logo.svg" alt="JagTrim International" class="h-16 mb-4">
                 <div class="flex flex-col justify-center items-start mb-4">
+                    <div id="logos" class="w-full flex justify-center items-center lg:justify-start mb-4 space-x-4">
+                        <a href="https://www.instagram.com/jagtrimnyc" target="_blank">
+                            <img src="/images/logos/ig.png" alt="Instagram" class="h-8">
+                        </a>
+                        <a href="https://github.com/jas9n/jtinternational" target="_blank">
+                            <img src="/images/logos/git.svg" class="h-8" alt="Github">
+                        </a>
+                    </div>
                     <p class="space-x-4">
                         <span class="font-semibold">Phone</span>
                         <span class="text-zinc-500">(917) 207-7549</span>
@@ -33,9 +41,6 @@
                 
                 <li><nuxt-link :to="{ name: 'contact' }" class="">Contact Us</nuxt-link></li>
             </ul>
-            <a href="https://github.com/jas9n/" target="_blank" class="absolute bottom-2 right-2 md:bottom-6 md:right-6">
-                <img src="/images/logos/git.svg" class="h-6" alt="Github">
-            </a>
         </div>
     </footer>
 </template>
