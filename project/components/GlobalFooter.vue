@@ -27,7 +27,7 @@
                     </p>
                 </div>
             </div>
-            <ul class="flex justify-center items-center space-x-8 md:space-x-16 xl:space-x-24 font-semibold lg:pt-20 text-center">
+            <ul class="flex justify-center items-center space-x-8 md:space-x-16 xl:space-x-24 font-semibold lg:pt-20 lg:pr-20 text-center">
                 <li><nuxt-link :to="{ name: 'index', hash: '#about' }" class="" >About Us</nuxt-link></li>
                 <li><nuxt-link :to="{ name: 'collection' }" class="" >Our Collection</nuxt-link></li>
                 
