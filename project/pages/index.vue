@@ -73,7 +73,7 @@ export default {
       })
     //   sketch.fromTo('#img1', {x:0}, {x:0}, 0)
     //   sketch.fromTo('#img2', {width: '0%'}, {x: '100%'}, 0)
-      sketch.fromTo('#img2', {x: '0%'}, {x: '1150%', ease:'power3.out'}, 0)
+      sketch.fromTo('#img2', {x: '0vw'}, {x: '70vw', ease:'power3.out'}, 0)
 
       
     },
