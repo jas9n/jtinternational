@@ -1,14 +1,14 @@
 <template>
     <nav id="nav">
         <!-- :class="{ nav: fixed }" -->
-        <div class="fixed top-0 flex w-full px-8 py-4 z-50 bg-transparent md:px-12 lg:px-16 xl:px-20 hover:bg-white transition-colors duration-500">
+        <div :class="{ nav: fixed }" class="fixed bg-transparent top-0 flex w-full px-8 py-4 z-50 md:px-12 lg:px-16 xl:px-20 hover:bg-white transition-colors duration-500">
             <div class="w-full h-full flex justify-between items-center">
                 <nuxt-link :to="{ name: 'index' }">
                     <img src="/images/logos/logo.svg" alt="JagTrim International" class="h-12">
                 </nuxt-link>
                 
                 <ul class="hidden justify-center space-x-12 font-medium md:flex">
-                    <li><nuxt-link :to="{ name: 'collection' }" class="line relative inline-block" >Our Collection</nuxt-link></li>
+                    <li><nuxt-link :to="{ name: 'collection' }" class="line relative inline-block" >Product Profile</nuxt-link></li>
                     
                     <li><nuxt-link :to="{ name: 'contact' }" class="line relative inline-block">Contact Us</nuxt-link></li>
                 </ul>
@@ -22,7 +22,7 @@
                 <div id="menu" v-if="menu" class="fixed inset-0 h-screen w-full text-black bg-white text-xl z-30 pl-16 sm:pl-20 pb-8 ease-in duration-200 md:hidden">
                 <!-- <div id="overlay" class="absolute inset-0 w-full h-full bg-black opacity-80 -z-10"></div> -->
                 <ul id="links" class="h-full flex flex-col justify-center items-start space-y-8 text-4xl text-black z-10">
-                    <li @click="toggleMenu"><nuxt-link :to="{ name: 'collection' }"  class="relative inline-block py-2">Our Collection</nuxt-link></li>
+                    <li @click="toggleMenu"><nuxt-link :to="{ name: 'collection' }"  class="relative inline-block py-2">Product Profile</nuxt-link></li>
                     
                     <li @click="toggleMenu"><nuxt-link :to="{ name: 'contact' }" class="relative inline-block py-2">Contact Us</nuxt-link></li>
                 </ul>

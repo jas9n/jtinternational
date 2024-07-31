@@ -5,7 +5,7 @@
         </div>
         <div id="about" class="w-full h-auto py-20 flex justify-center items-center z-20 bg-white">
             <div class="flex flex-col items-center justify-center w-2/3 space-y-4">
-                <h2 class="font-serif font-medium text-3xl md:text-4xl lg:text-5xl pb-4 text-center">Design with passion. Craft with precision.</h2>
+                <h2 class="font-serif font-medium text-2xl md:text-3xl lg:text-4xl pb-4 text-center">Our Story</h2>
                 <p class="text-md md:text-lg lg:text-xl text-center">
                     Located in the heart of the Garment District in New York City, we founded Jag International Trim in 2019. Five years later, we have expanded our presence to fashion brands and garment manufacturers around the world. Together with our dedicated team members in Hong Kong and China, we take a service-centric approach to our everyday work and operate from a place of appreciation of designs and art forms. We believe in the integrity of well-made products, and we have an unwavering commitment to quality, functionality, and the quest for high standards.
                 </p>
@@ -13,15 +13,15 @@
             </div>
         </div>
         <div id="sketch" class="w-full h-[60vh] md:h-screen flex justify-center items-center relative" >
-            <img id="img1" src="/images/photos/sketch2.jpg" alt="" class="xl:h-full xl:w-auto height-full w-full object-cover absolute">
+            <img id="img1" src="/images/photos/sketch1.jpg" alt="" class="xl:h-full xl:w-auto height-full w-full object-cover absolute">
 
             <svg class="w-full h-full object-cover" preserve-aspect-ratio="xMidYMid slice">
                 <defs>
                     <mask id="mask" x="0" y="0" width="100%" height="100%">
-                        <rect id="img2" x="0" y="0" width="100%" height="100%"/>
+                        <rect id="img2" x="0" y="0" width="30%" height="100%"/>
                     </mask>
                 </defs>
-                <image href="/images/photos/sketch1.jpg"  x="0" y="0" class="w-full h-full" />
+                <image href="/images/photos/sketch2.jpg"  x="0" y="0" class="w-full h-full" />
             </svg>
     
         </div>
@@ -30,7 +30,7 @@
             <img src="/images/photos/collection.jpg" alt="" class="absolute w-full h-full max-h-[60vh] md:max-h-none object-cover"> 
             
             <nuxt-link :to="{ path: 'collection'}">
-                <button class=" bg-orange-400 mt-2.5 px-8 py-3 opacity-90 rounded hover:bg-orange-500 transition-colors duration-300 z-10 absolute ml-20">View Collection</button>
+                <button class=" bg-white text-lg mt-2.5 px-12 py-4 opacity-90 rounded hover:bg-zinc-100 transition-colors duration-300 z-10 absolute ml-20">View Products</button>
             </nuxt-link>
         </div>
     </div>
@@ -73,7 +73,7 @@ export default {
       })
     //   sketch.fromTo('#img1', {x:0}, {x:0}, 0)
     //   sketch.fromTo('#img2', {width: '0%'}, {x: '100%'}, 0)
-      sketch.fromTo('#img2', {x: '0%'}, {x: '490%', ease:'power3.out'}, 0)
+      sketch.fromTo('#img2', {x: '0%'}, {x: '1150%', ease:'power3.out'}, 0)
 
       
     },

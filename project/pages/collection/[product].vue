@@ -1,5 +1,6 @@
 <template>
     <div class="min-h-screen w-full flex flex-col lg:flex-row justify-center items-center mt-16 lg:mt-10">
+        <nuxt-link to="/collection" class="absolute top-[15%] left-[10%]">&#10094; Back</nuxt-link>
         <div class="flex flex-col justify-center items-center">
             <img :src="`/images/collection/${itemStore.items[$route.params.product - 1].photo[index]}.jpg`" :alt="itemStore.items[$route.params.product - 1].photo[0]" class="w-[80vw] max-w-lg">
             <div id="gallery" class="flex items-center justify-center lg:justify-start w-full space-x-2">

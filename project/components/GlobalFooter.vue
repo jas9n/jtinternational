@@ -8,17 +8,17 @@
                         <span class="font-semibold">Phone</span>
                         <span class="text-zinc-500">(917) 207-7549</span>
                     </p>
-                    <p class="space-x-5">
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=amanda@jagtrim.com" target="_blank" class="space-x-5">
                         <span class="font-semibold">Email</span>
                         <span class="text-zinc-500">amanda@jagtrim.com</span>
-                    </p>
+                    </a>
                 </div>
                 <div class="flex flex-col justify-center items-center lg:items-start mb-8">
-                    <p class="flex flex-col items-center lg:items-start mb-4">
+                    <a href="https://maps.app.goo.gl/Tk7qtMxSP31HzxY5A" target="_blank" class="flex flex-col items-center lg:items-start mb-4">
                         <span class="font-semibold">Head Office</span>
                         <span class="text-zinc-500">315 W 39th St Studio 905</span>
                         <span class="text-zinc-500">New York, NY 10018</span>
-                    </p>
+                    </a>
                     <p class="flex flex-col items-center lg:items-start">
                         <span class="font-semibold">Branch Office</span>
                         <span class="text-zinc-500">Flat B, 14F Kwai Shing Industrial Building</span>

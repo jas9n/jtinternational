@@ -3,15 +3,17 @@
       <!-- <div class="absolute w-full h-screen -z-10 bg-black"></div> -->
       <img id="landing-img" :src="`/images/photos/${photos[index]}.jpg`" alt="" class="h-screen w-full object-cover absolute top-0 left-0 ">
       <img :src="`/images/photos/${photos[reverseIndex]}.jpg`" alt="" class="h-screen w-full object-cover absolute top-0 left-0 -z-10">
+
+      <!-- <h1 class="z-20 text-white font-serif text-6xl font-medium">Design with passion. Craft with precision.</h1> -->
       
       <!-- <img id="monogram1" src="/images/logos/monogram-j.svg" class="hidden absolute h-screen w-full object-cover top-0 md:block" alt="">
       <img id="monogram2" src="/images/logos/monogram-t.svg" class="hidden absolute h-screen w-full object-cover top-0 md:block" alt=""> -->
-      <!-- <div class="flex justify-center items-start absolute right-12 sm:right-20 md:right-24 xl:right-40">
-        <h1 class="flex flex-col items-end space-y-3 pb-2 font-sans text-zinc-800 text-4xl md:text-6xl lg:text-7xl font-bold">
+      <div class="flex justify-center items-start absolute bottom-40 right-12 sm:right-20 md:right-24 xl:right-32">
+        <h1 class="flex flex-col items-end space-y-3 pb-2 font-serif font-medium text-white text-4xl md:text-6xl lg:text-7xl ">
           <span id="title">Design by passion.</span>
           <span id="title">Craft with precision.</span> 
         </h1>
-      </div> -->
+      </div>
     </div>
 </template>
 
@@ -51,3 +53,12 @@ export default {
 
 }
 </script>
+
+<style scoped>
+
+h1 {
+  text-shadow: 1px 1px 2px black;
+  /* letter-spacing: 3px;
+  font-family: 'Bebas Neue'; */
+}
+</style>
