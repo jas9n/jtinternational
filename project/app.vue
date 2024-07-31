@@ -1,10 +1,17 @@
 <script setup>
+useHead({
+  title: 'Jag International Trim LLC',
+  meta: {
+    name: 'description',
+    content: 'Jag International Trim, located in the Garment District in NYC, is a premier button and trimming manufacturer. We offer development and design service to the fashion community.'
+  }
+})
 useSeoMeta(
   {
     title: 'Jag International Trim LLC',
     ogTitle: 'Jag International Trim LLC',
-    description: 'Hello!',
-    ogDescription: 'Hello!',
+    description: 'Jag International Trim, located in the Garment District in NYC, is a premier button and trimming manufacturer. We offer development and design service to the fashion community.',
+    ogDescription: 'Jag International Trim, located in the Garment District in NYC, is a premier button and trimming manufacturer. We offer development and design service to the fashion community.',
     ogImage: 'images/favicon.png',
   }
 )
