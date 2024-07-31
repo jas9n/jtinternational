@@ -29,7 +29,7 @@
         <div class="w-full h-auto py-20 flex justify-center items-center z-20 bg-white">
             <div class="flex flex-col items-center justify-center w-2/3 space-y-4">
             <h2 class="font-serif font-medium text-2xl md:text-3xl lg:text-4xl pb-4 text-center">
-                From your vision to reality
+                From your Vision to Reality
 
             </h2>
                 <p class="text-md md:text-lg lg:text-xl text-center">

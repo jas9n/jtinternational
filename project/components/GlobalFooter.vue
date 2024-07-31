@@ -29,9 +29,9 @@
                     </a>
                     <p class="flex flex-col items-center lg:items-start">
                         <span class="font-semibold">Branch Office</span>
-                        <span class="text-zinc-500">Flat B, 14F Kwai Shing Industrial Building</span>
-                        <span class="text-zinc-500"> Phase 1, 36-40 Tai Lin Pai Rd,</span>
-                        <span class="text-zinc-500"> Kwai Chung, Hong Kong</span>
+                        <span class="text-zinc-500">Flat B, 14F Kwai Shing Industrial</span>
+                        <span class="text-zinc-500">Building Phase 1, 36-40 Tai Lin</span>
+                        <span class="text-zinc-500">Pai Rd, Kwai Chung, Hong Kong</span>
                     </p>
                 </div>
             </div>
