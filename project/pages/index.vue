@@ -9,7 +9,7 @@
                 <p class="text-md md:text-lg lg:text-xl text-center">
                     Located in the heart of the Garment District in New York City, we founded Jag International Trim in 2019. Five years later, we have expanded our presence to fashion brands and garment manufacturers around the world. Together with our dedicated team members in Hong Kong and China, we take a service-centric approach to our everyday work and operate from a place of appreciation of designs and art forms. We believe in the integrity of well-made products, and we have an unwavering commitment to quality, functionality, and the quest for high standards.
                 </p>
-                <p class="font-medium text-md md:text-lg lg:text-xl text-center">Let us bring your design visions to life and see how we can meet your needs.</p>
+                <!-- <p class="font-medium text-md md:text-lg lg:text-xl text-center">Let us bring your design visions to life and see how we can meet your needs.</p> -->
             </div>
         </div>
         <div id="sketch" class="w-full h-[60vh] md:h-screen flex justify-center items-center relative" >
@@ -66,7 +66,7 @@ export default {
         scrollTrigger: {
           trigger: '#sketch',
           start: 'top top',
-          end: 'bottom 250vh',
+          end: 'bottom 300vh',
           pin: '#sketch',
           scrub: 0.3,
         }

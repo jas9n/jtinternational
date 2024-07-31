@@ -12,11 +12,10 @@
         <div class="px-8 max-w-xl pt-6 lg:pt-0 lg:pb-32">
             <h1 class="font-serif font-medium text-4xl">{{ itemStore.items[$route.params.product - 1].name }}</h1>
             <div class="flex justify-start items-center space-x-6 text-xl font-semibold mt-6 mb-4">
-                <h3 id="desc" @click="toggleDesc()" class="line cursor-pointer">Description</h3>
-                <h3 id="usage" @click="toggleUsage()" class=" cursor-pointer">Usage</h3>
+                <h3 id="desc" class="line">Description</h3>
+                <!-- <h3 id="usage" @click="toggleUsage()" class=" cursor-pointer">Usage</h3> -->
             </div>
-            <p v-if="description">This is the description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo pariatur saepe officiis possimus quidem, suscipit dignissimos incidunt minus fugit tempore.</p>
-            <p v-if="usage">This is the usage. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptate cupiditate doloremque autem, quod possimus repudiandae deserunt itaque quae quasi.</p>
+            <p>{{ itemStore.items[$route.params.product - 1].desc[index] }}</p>
 
         </div>
     </div>
@@ -45,18 +44,18 @@ export default {
         display(n) {
             this.index = n
         },
-        toggleDesc() {
-            this.description = true
-            this.usage = false
-            document.querySelector('#desc').classList.add('line')
-            document.querySelector('#usage').classList.remove('line')
-        },
-        toggleUsage() {
-            this.usage = true
-            this.description = false
-            document.querySelector('#usage').classList.add('line')
-            document.querySelector('#desc').classList.remove('line')
-        },
+        // toggleDesc() {
+        //     this.description = true
+        //     this.usage = false
+        //     document.querySelector('#desc').classList.add('line')
+        //     document.querySelector('#usage').classList.remove('line')
+        // },
+        // toggleUsage() {
+        //     this.usage = true
+        //     this.description = false
+        //     document.querySelector('#usage').classList.add('line')
+        //     document.querySelector('#desc').classList.remove('line')
+        // },
         
     },
 }
