@@ -35,7 +35,7 @@ export default {
       const interval = setInterval(this.next, 4500)
       setTimeout(() => {
         clearInterval(interval)
-      }, 4500 * 10) 
+      }, 4500 * 15) 
     },
     methods: {
 

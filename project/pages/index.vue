@@ -43,7 +43,7 @@
             <img src="/images/photos/collection.jpg" alt="" class="absolute w-full h-full max-h-[60vh] md:max-h-none object-cover"> 
             
             <nuxt-link :to="{ name: 'products'}" class="flex justify-center items-center">
-                <button class=" bg-white text-lg px-8 py-3 lg:px-12 lg:py-4 opacity-90 rounded hover:bg-zinc-100 transition-colors duration-300 z-10 absolute">View Products</button>
+                <button class=" bg-white text-md lg:text-lg px-8 py-3 lg:px-14 lg:py-5 opacity-90 rounded hover:bg-zinc-100 transition-colors duration-300 z-10 absolute">View Products</button>
             </nuxt-link>
         </div>
     </div>

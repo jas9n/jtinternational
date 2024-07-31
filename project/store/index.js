@@ -69,9 +69,9 @@ export const useItemStore = defineStore('itemStore', {
                 ],
                 desc: [
                     'Real corozo - comes from the nuts of the tagua palm tree in Ecuador.  The nuts are collected by the locals without causing damage to the palm tree or environment. Corozo is a 100% sustainable and renewable resource. Buttons can be dyed, burnt, and coated. There is a natural variation in color and pattern which makes corozo one of the top sustainable button choices.',
+                    'Eco-rozo - is designed to repurpose the production wastage of corozo button. Wastage is grinded into fine powder form and mixed into polyester resin. The composition is 30% of corozo powder and 70% of polyester resin.',
                     'Real shell - offers in MOP, troca, agoya, and river shell. We sustainably harvest shell either as a by-product of the food industry or from a regulated source which harvests shells without causing disturbance to marine life.',
                     'Coconut - we use the skin part of the nut to cut into buttons. This is a by-product of food and beauty products industry.',
-                    'Eco-rozo - is designed to repurpose the production wastage of corozo button. Wastage is grinded into fine powder form and mixed into polyester resin. The composition is 30% of corozo powder and 70% of polyester resin.',
                     'Sustainable poly resin - can be made in 2 forms: biodegradable resin and recycled PET resin. Biodegradable resin buttons can decompose in around 90 days when disposed in composting conditions. Recycled PET resin is composed of 30% of rPET which can help reducing plastic waste and supports resource conservation initiatives.'
                 ]
             },
