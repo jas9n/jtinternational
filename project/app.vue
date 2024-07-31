@@ -1,4 +1,13 @@
 <script setup>
+useSeoMeta(
+  {
+    title: 'Jag International Trim LLC',
+    ogTitle: 'Jag International Trim LLC',
+    description: 'Hello!',
+    ogDescription: 'Hello!',
+    ogImage: 'images/favicon.png',
+  }
+)
 
 const nuxtApp = useNuxtApp()
 
