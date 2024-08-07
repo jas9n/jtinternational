@@ -31,15 +31,12 @@ export default {
         }
     },
     mounted() {
-    
       const interval = setInterval(this.next, 4500)
       setTimeout(() => {
         clearInterval(interval)
       }, 4500 * 15) 
     },
     methods: {
-
-
         next() {
             this.index += 1
             this.reverseIndex += 1
