@@ -1,7 +1,7 @@
 <template>
     <div class="w-screen h-screen flex justify-center items-center z-10">
       <!-- <div class="absolute w-full h-screen -z-10 bg-black"></div> -->
-      <img id="landing-img" :src="`/images/photos/${photos[index]}.jpg`" alt="" class="h-screen w-full object-cover absolute top-0 left-0 ">
+      <img id="landing-img" :src="`/images/photos/${photos[index]}.jpg`" alt="" class="h-screen w-full object-cover absolute top-0 left-0 img">
       <img :src="`/images/photos/${photos[reverseIndex]}.jpg`" alt="" class="h-screen w-full object-cover absolute top-0 left-0 -z-10">
 
       <!-- <h1 class="z-20 text-white font-serif text-6xl font-medium">Design with passion. Craft with precision.</h1> -->
@@ -31,10 +31,12 @@ export default {
         }
     },
     mounted() {
-      const interval = setInterval(this.next, 4500)
-      setTimeout(() => {
-        clearInterval(interval)
-      }, 4500 * 15) 
+      this.index = 0
+      this.reverseIndex = 0
+      const interval = setInterval(this.next, 3000)
+      // setTimeout(() => {
+      //   clearInterval(interval)
+      // }, 4500 * 15) 
     },
     methods: {
         next() {
@@ -42,8 +44,9 @@ export default {
             this.reverseIndex += 1
             if (this.index >= this.count) this.index = 0;
             if (this.reverseIndex >= this.count) this.reverseIndex = 0
-            gsap.from('#landing-img', { x:'20%', duration: 0.5, })
-            gsap.from('#landing-img', { opacity: 0, duration: 0.5, ease: "power3.in"})
+            // gsap.from('#landing-img', { x:'20%', duration: 0.5, })
+            // gsap.from('#landing-img', { opacity: 0, duration: 0.5, ease: "power3.in"})
+           
         },
     },
 
@@ -52,10 +55,23 @@ export default {
 </script>
 
 <style scoped>
-
 h1 {
   text-shadow: 1px 1px 2px black;
   /* letter-spacing: 3px;
   font-family: 'Bebas Neue'; */
 }
+
+/* @keyframes slide {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.img {
+  animation: slide 3000ms infinite ease-in;
+} */
+
 </style>
