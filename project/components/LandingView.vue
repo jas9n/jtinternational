@@ -1,6 +1,6 @@
 <template>
     <div class="w-screen h-screen flex justify-center items-center z-10">
-      <div class="absolute w-full h-screen -z-10 bg-black"></div>
+      <!-- <div class="absolute w-full h-screen -z-10 bg-black"></div> -->
       <img id="landing-img" :src="`/images/photos/${photos[index]}.jpg`" alt="" class="h-screen w-full object-cover absolute top-0 left-0">
       <!-- <img :src="`/images/photos/${photos[reverseIndex]}.jpg`" alt="" class="h-screen w-full object-cover absolute top-0 left-0 -z-10"> -->
 
